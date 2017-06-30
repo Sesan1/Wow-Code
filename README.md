@@ -11,10 +11,7 @@ public Node getReplacementNode(Node replacedNode){
 			focusNode = focusNode.leftChild;
 		}
 		
-		if(replacement != replacedNode.rightChild){
-			replacementParent.leftChild = replacement.rightChild;
-			replacement.rightChild = replacedNode.rightChild;
-		}
+		
 		
 		return replacement;
 	}
